@@ -1,0 +1,22 @@
+<!--#include virtual="header.shtml"-->
+<div class="primary">
+<h2 style="margin-top:0" id="quotes">bonfire quoteboard</h2>
+<div style="height:300px;border-radius:5px;border:1px solid #505050;overflow:auto;padding:0 10px">
+<p>"Concrete is /in/ again!" - btidor</p>
+
+<p>"This moment didn't happen if I can't find a pen!" - mannes</p>
+</div>
+<h2 id="scripts">misc scripts</h2>
+<p id="residents"><a href="http://web.mit.edu/lucci/Public/web-scripts/generate_residents.py"><b>generate_residents.py</b></a>: a silly script that, given a list of class years, generates a properly-formatted residents.shtml file that includes all of the residents currently on the random-hall-[year] lists, as well as the housemasters and GRTs. To run, navigate to the location where the file is to be generated, copy in generate_residents.py, and do</p>
+<code>
+~$ python generate_residents_shtml.py 2014 2015 2016 2017 2018 &gt; residents.shtml
+</code>
+<p>replacing 2014 2015 2016 2017 2018 with however many years you are trying to generate the list for.</p>
+<p>-----------------</p>
+<p id="imgs"><a href="http://web.mit.edu/lucci/Public/web-scripts/generate_img.py"><b>generate_img.py</b></a>: a collection of scripts for generating image shtml files from a folder of images. Basically resizes all images to 1200x900 or 900x1200 depending on orientation, creates thumbnails for all images, and generates a main.shtml file containing all images in file_path. To run, navigate to the location with the folder of images, copy in generate_img.py, and do</p>
+<code>
+~$ python generate_img.py foo/ 'Foo Bar 2015' 2
+</code>
+<p> replacing foo/ with the name of the folder with all the images, 'Foo Bar 2015' with the page title, and 2 with the number of columns you want the images arranged in.</p>
+</div>
+<!--#include virtual="footer.shtml"-->

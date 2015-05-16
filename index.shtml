@@ -1,0 +1,38 @@
+<!--#include virtual="header.shtml" -->
+
+<div class="primary">
+
+<p><h1><a href="">changelog</a> may 15</h1>
+<ol>
+<li>switched blog over from Wordpress to tumblr;</li>
+<li>replaced Wordpress link with blog.shtml in site header;</li>
+<li>wrote JavaScript to integrate tumblr posts into blog.shtml;</li>
+<li>cobbled together tumblr theme matching overall website;</li>
+<li>made page titles and headers look less clunky;</li>
+<li>added bonfire quoteboard to silly.shtml page.</li>
+</ol>
+
+<p><h1><a href="">changelog</a> apr 15</h1>
+<ol>
+<li>updated information on about page;</li>
+<li>fixed Google Analytics tracking to be less invasive;</li>
+<li>modified style.css to make lists look less silly;</li>
+<li>wrote silly.shtml for miscellaneous fun stuff;</li>
+<li>updated information on projects page;</li>
+<li>changed line height for paragraphs and general text.</li>
+</ol>
+
+<p><h1><a href="">changelog</a> mar 15</h1>
+<ol>
+<li>wrote style.css, header.shtml, footer.shtml, and pages;</li>
+<li>ran <a href="http://scripts.mit.edu/start/">quick-start</a> at <a href="http://scripts.mit.edu/">scripts.mit.edu</a> for WordPress;</li>
+<li>copied style.css and wrote ~.php files for blog consistent theme;</li>
+<li>made site responsive across 600px;</li>
+<li>some javascript added to hide email addresses -- thanks, lua!</li>
+<li>added Google Analytics tracking to website and blog;</li>
+<li>discovered the joys of <a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a>;</li>
+<li>added (document).ready() check before parsing JavaScript.</li>
+</ol>
+</div>
+<!--#include virtual='footer.shtml' -->
+

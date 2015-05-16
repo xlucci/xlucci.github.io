@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head><title>llamas+llamas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://gkedts.tumblr.com/api/read/json"></script>
+</head>
+
+<!--#if expr="${DOCUMENT_NAME}=/index.shtml/"-->
+<body class="home">
+<!--#elif expr="${DOCUMENT_NAME}=/about.shtml/"-->
+<body class="about">
+<!--#elif expr="${DOCUMENT_NAME}=/projects.shtml|beef_experiment.shtml/"-->
+<body class="projects">
+<!--#elif expr="${DOCUMENT_NAME}=/silly.shtml/"-->
+<body class="silly">
+<!--#else -->
+<body class="blog">
+<!--#endif -->
+
+<div id="page">
+    <div id="header">
+        <ul id="topmenu">
+            <li><a href="http://web.mit.edu/lucci/www/index.shtml" class="home">Home</a></li>
+            <li><a href="http://web.mit.edu/lucci/www/about.shtml" class="about">About</a></li>
+            <li><a href="http://web.mit.edu/lucci/www/projects.shtml" class="projects">Projects</a></li>
+            <li><a href="http://web.mit.edu/lucci/www/silly.shtml" class="silly">Silly</a></li>
+            <li><a href="http://web.mit.edu/lucci/www/blog.shtml" class="blog">Blog</a></li>
+        </ul>
+    </div>
+
+<div class="primary">
+
+<script type="text/javascript">
+    for (var i = 0; i < 5; i++) {
+        document.write(
+            '<div class="post-wrapper"><h1 style="margin:10px 0 0 0;padding:10px 0 20px 0"><a href ="">'+tumblr_api_read['posts'][i]['regular-title']+'</a></h1>'+tumblr_api_read['posts'][i]['regular-body']+'<div class="meta">');
+        for (var j in tumblr_api_read['posts'][i]['tags']) {
+            document.write( '<a href="">#'+tumblr_api_read['posts'][i]['tags'][j]+'</a> ');
+        }
+        document.write('</div>');
+}
+        
+</script>
+
+
+<!--<script type="text/javascript"> 
+   for (var i = 0; i < 5; i++) { 
+      document.write(
+         '<h6><br><a class="boldLink" target="_blank" href="' + tumblr_api_read['posts'][i]['url'] + 
+'">' + tumblr_api_read['posts'][i]['regular-title'] + '</a><br>'+ tumblr_api_read['posts'][i]['date']+'</br></br><h6>'
+      );
+}</script>
+-->
+</div>
+<!--#include virtual='footer.shtml' -->

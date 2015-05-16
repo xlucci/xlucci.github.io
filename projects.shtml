@@ -1,0 +1,9 @@
+<!--#include virtual="header.shtml" -->
+
+<div class="primary">
+<p>Below are a series of things that I've been working on fairly recently. Most if not all of them are not serious and therefore contain no scientific rigor at all, but I would be interested in replicating them in a more serious manner should the need arise, and will probably update them often as more things come in.</p>
+<h2><a href="http://web.mit.edu/lucci/www/projects/beef_experiment.shtml">The Great Beef Experiment</a></h2>
+<p><em>Ribeye steak of two kinds, USDA prime and USDA choice, was separated into two piles each and liberally seasoned with salt and pepper. The four different plates of beef were then either grilled or sous vide'd and served to members of the mitBEEF community, who then each rated the four different slices in descending order by taste preference. From this it was concluded that the average member of the mitBEEF community could not distinguish between grilled prime and choice steak, but that due to high variability in serving temperature and presentation the data should be interpreted as inconclusive.</em></p>
+</div>
+<!--#include virtual="footer.shtml" -->
+

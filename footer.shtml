@@ -1,0 +1,33 @@
+    <div id="footer">
+        <p><a href="http://random-hall.mit.edu/blog/">random hall blog</a> | 
+            <a href="https://esp.mit.edu/teach/teachers/lucci/bio.html">esp teacher's bio</a> | 
+            <a href="mailto:lucciATmitDOTedu">contact me</a></p>
+    </div>
+
+</div>
+</body>
+    <link rel="stylesheet" href="http://web.mit.edu/lucci/www/style.css" type="text/css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">                               
+    $(document).ready(function() {
+        $('a[href^="mailto:"]').on('click', function() {
+            this.href = this.href.replace('AT','@').replace('DOT','.');
+        });
+        setTimeout(function() {
+           ga('send', 'event', 'page', 'read');
+        }, 15000);
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('require', 'linker');
+        ga('linker:autoLink', ['http://random-hall.mit.edu/blog/']);
+        ga('create', 'UA-61181291-1', 'auto', {
+            'allowLinker': true
+        });
+        ga('send', 'pageview');                                                                                                                          
+    });
+
+</script>
+</html>
